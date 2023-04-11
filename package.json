@@ -12,7 +12,8 @@
     "build": "turbo run build build:next",
     "dev": "turbo run dev dev:next",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "reproduce": "rm -rf .next && yarn build --force && node .next/standalone/server.js"
   },
   "dependencies": {
     "next": "^13.1.1",
